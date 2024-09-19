@@ -1,0 +1,73 @@
+<!--
+    bootcamp project, 2024
+    description : pokedex project
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> mon site </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="my_style.css">
+        <script src="main.js" defer></script>
+    </head>
+
+
+    <body>
+        <header>
+            <h1>P KÉDEX</h1>
+            <div class="menu-icon" id="button">
+                <img src="img/menu-icon.png" alt="Menu">
+            </div>
+
+            <nav id="menu" class="hidden">
+                <ul>
+                    <li><a href="about">À propos</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="image-banner"></div>
+
+            <div>
+                <img src="img/pokeball.png" class="img-overlay" />
+            </div>
+        </header>
+
+
+        <div class="pokemon-container" id="pokelist"></div>
+
+
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un Pokémon..." class="search-input">
+            <button class="search-button">Rechercher</button>
+        </div>
+
+        <div id="pokemon-details" class="hidden">
+            <h2 id="pokemon-name"></h2>
+            <img id="pokemon-image" src="" alt="Pokémon Image" />
+            <h3 id="pokemon-id"></h3>
+            <ul id="pokemon-types"></ul>
+            <p id="pokemon-category"></p>
+            <p id="pokemon-ability"></p>
+            <p id="pokemon-height"></p>
+            <p id="pokemon-weight"></p>
+            <p id="pokemon-gender"></p>
+            <p id="pokemon-description"></p>
+            <p id="pokemon-stats-pv"></p>
+            <p id="pokemon-stats-attack"></p>
+            <p id="pokemon-stats-defense"></p>
+            <p id="pokemon-stats-special-attack"></p>
+            <p id="pokemon-stats-special-defense"></p>
+            <p id="pokemon-stats-speed"></p>
+            <ul id="pokemon-weaknesses"></ul>
+            <button id="back-to-list">Retour</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 POKÉDEX. Attrapez-les tous !</p>
+        </footer>
+    </body>
+</html>
